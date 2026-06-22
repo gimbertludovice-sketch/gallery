@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Technology Gallery — Gimbert Ludovice</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f0f4f8;
+      padding: 40px 20px;
+    }
+    .page-header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    .page-header h1 {
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: #1a2f4a;
+      margin-bottom: 6px;
+    }
+    .page-header p { font-size: 0.88rem; color: #666; }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    figure {
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    figure:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.16);
+    }
+    .img-placeholder {
+      aspect-ratio: 4/3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .img-placeholder span { font-size: 3.5rem; }
+    .img-placeholder .img-title {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+    }
+    .img1 { background: linear-gradient(145deg, #0d2a5a, #0a1f42); color: #60a5fa; }
+    .img2 { background: linear-gradient(145deg, #0a2e1c, #071a0e); color: #4ade80; }
+    .img3 { background: linear-gradient(145deg, #2a0a30, #1a0622); color: #e879f9; }
+    figcaption {
+      padding: 18px 20px 20px;
+    }
+    figcaption strong {
+      display: block;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #1a2f4a;
+      margin-bottom: 6px;
+    }
+    figcaption p {
+      font-size: 0.8rem;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .alt-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.62rem;
+      background: #eaf7ee;
+      color: #1a7a3a;
+      border: 1px solid #b2dfc2;
+      border-radius: 5px;
+      padding: 3px 10px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-header">
+    <h1>Technology Gallery</h1>
+    <p>Three images related to Information Technology with alt text and captions</p>
+  </div>
+
+  <div class="gallery">
+
+    <figure>
+      <div class="img-placeholder img1"
+           role="img"
+           aria-label="Web Development — HTML, CSS, and JavaScript source code displayed on a laptop screen">
+        <span>💻</span>
+        <span class="img-title">Web Development</span>
+      </div>
+      <figcaption>
+        <strong>Web Development</strong>
+        <p>Writing HTML, CSS, and JavaScript to build interactive web applications for everyday users.</p>
+        <span class="alt-badge">✓ alt: "Code on laptop screen"</span>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <div class="img-placeholder img2"
+           role="img"
+           aria-label="Artificial Intelligence — neural network visualization with interconnected nodes and data flow">
+        <span>🤖</span>
+        <span class="img-title">AI / Machine Learning</span>
+      </div>
+      <figcaption>
+        <strong>Artificial Intelligence</strong>
+        <p>Neural networks and machine learning algorithms powering intelligent systems of the future.</p>
+        <span class="alt-badge">✓ alt: "Neural network nodes"</span>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <div class="img-placeholder img3"
+           role="img"
+           aria-label="Mobile Development — smartphone displaying a mobile application user interface">
+        <span>📱</span>
+        <span class="img-title">Mobile Development</span>
+      </div>
+      <figcaption>
+        <strong>Mobile Development</strong>
+        <p>Designing and building Android and iOS apps for mobile users around the world.</p>
+        <span class="alt-badge">✓ alt: "Smartphone app screen"</span>
+      </figcaption>
+    </figure>
+
+  </div>
+
+</body>
+</html>
